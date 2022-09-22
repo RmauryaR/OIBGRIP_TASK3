@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 55, 255, 0.479);
+    
+}
+
+
+div.parent{
+  background-image: url("temp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 30px rgb(0, 166, 158);
+  width:50%; 
+  height:auto;
+  margin: 40px auto; 
+  text-align: center; 
+  padding: 7px;
+}
+@media screen and (max-width: 871px){
+  div.parent{
+      width: 95%;
+
+  }
+}
+
+div.child{
+  border: 5px solid;
+  background-color:rgba(0, 0, 0, 0.801); 
+  width:70%; 
+  box-shadow: 5px 5px 10px black;
+  text-align: center; 
+  padding: 2px; 
+  margin: 0 auto; 
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.child h1{
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: rgb(142, 255, 230);
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 459px){
+  .child h1{
+    font-size: 30px;
+
+  }
+}
+
+.formGroup{
+  margin-bottom: 30px;
+}
+
+.formGroup label{
+  color: rgb(142, 255, 230);
+  font-size: 20px;
+  font-family: 'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  
+}
+
+ .formGroup button{
+  background-color: rgb(255, 238, 46);
+  border-color: beige;
+  padding: 5px 20px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 3px 2px 5px rgb(255, 255, 255);
+  margin-bottom: 25px;
+
+}
+
+.submitButton{
+  margin-left: 25px;
+  float: left;
+
+}
+
+.bt2{
+  float: right;
+  margin-right: 25px;
+}
+
+.formGroup button:hover{
+  transition: ease-in-out 300ms;
+  font-size: 35px;
+
+}
+
+@media screen and (max-width: 1095px){
+  .formGroup button{
+      float: none;
+      margin-bottom: 0px;
+  }
+}
+
+input{
+    font-size: 20px;
+    width: 90%;
+    height: 40px;
+    border-radius: 25px; 
+    border: 1px solid whitesmoke;
+    padding: 2px 10px;
+     transition: all 0.3s ease; 
+    margin-top: 10px;
+    font-weight: 700;
+}
